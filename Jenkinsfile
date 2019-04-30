@@ -1,7 +1,6 @@
 #!groovy
-pipeline {
-    agent any
-
+node {
+    
     stage('Checkout SVM'){
         git branch: 'master' , url:'https://github.com/LeticiaEulalia/endCareer.git'
     }
