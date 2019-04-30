@@ -1,7 +1,7 @@
 #!groovy
 node {
     
-    stage('Checkout SVM'){
+    stage('Checkout SCM'){
         git branch: 'master' , url:'https://github.com/LeticiaEulalia/endCareer.git'
     }
 
