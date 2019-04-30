@@ -1,19 +1,21 @@
-#!groovy
-node {
-    
-    stage('Checkout SCM'){
-        git branch: 'master' , url:'https://github.com/LeticiaEulalia/endCareer.git'
-    }
+pipeline {
+    agent any
 
-    stage('Install node modules'){
-        sh "npm install"
-    }
+    stages{
 
-    stage('Build'){
-        sh "npm run build:ssr"
-    }
+        stage('Checkout SVM'){
+            git branch: 'master' , url:'https://github.com/LeticiaEulalia/endCareer.git'
+        }
+        
+        stage('Clone repo and clean it'){
+            steps {
+                sh "rm -rf my-angular-app"
+                sh "https://github.com/LeticiaEulalia/endCareer.git"
+            }
+        }
 
-    stage('Deploy'){
-        sh "pm2 restart all"
+        stage('Install node modules'){
+            sh "npm install"
+        }
     }
 }
