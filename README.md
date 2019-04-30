@@ -5,3 +5,5 @@ Es una aplicación web que consta de las ayudas sociales de la Comunidad de Madr
 Está hecha con angularJS y node.js como backend.
 
 Mi tutor fue Guillermo Román y me ayudó muchisimo.
+
+Presenté el trabajo en Julio de 2018
