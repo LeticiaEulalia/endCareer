@@ -1,6 +1,3 @@
-# endCareer
-This is my final degree project of Computer Science Grade
+Este mi trabajo de fin de grado.
 
-Quiero comprobar si el webhook que he hecho funciona.
-
-Me encantaria que funcionara.
+Es una aplicación web que consta de las ayudas sociales de la comunidad de Madrid.
