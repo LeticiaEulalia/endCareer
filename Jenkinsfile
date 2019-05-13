@@ -7,15 +7,14 @@ pipeline {
             git branch: 'master' , url:'https://github.com/LeticiaEulalia/endCareer.git'
         }
         
-        stage('Clone repo and clean it'){
+        stage('Install node modules'){
             steps {
-                sh "rm -rf my-angular-app"
-                sh "https://github.com/LeticiaEulalia/endCareer.git"
+                sh "npm install"
             }
         }
 
-        stage('Install node modules'){
-            sh "npm install"
+        stage('Build'){
+            sh "npm run build:ssr"
         }
     }
 }
